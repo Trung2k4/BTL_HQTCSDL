@@ -1,0 +1,50 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bảng điều khiển</title>
+  <link rel="stylesheet" href="css/hotelDashboard.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>🏨 Hotel Admin</h2>
+    <a href="dashboard.html" class="active">Bảng điều khiển</a>
+    <a href="KhachHang.html">Khách hàng</a>
+    <a href="#">Phòng</a>
+    <a href="#">Hóa đơn</a>
+    <a href="#">Dịch vụ</a>
+  </div>
+
+  <div class="main">
+    <div class="topbar">Bảng điều khiển tổng quan</div>
+
+    <div class="dashboard">
+      <div class="card">
+        <h3>Khách đặt phòng</h3>
+        <div class="value" id="bookingCount">25</div>
+      </div>
+      <div class="card">
+        <h3>Khách dùng dịch vụ</h3>
+        <div class="value" id="serviceUsersCount">14</div>
+      </div>
+      <div class="card">
+        <h3>Doanh thu</h3>
+        <div class="value" id="revenueTotal">25.600.000</div>
+      </div>
+      <div class="card">
+        <h3>Phòng còn trống</h3>
+        <div class="value" id="availableRooms">15</div>
+      </div>
+    </div>
+
+    <div class="chart-container">
+        <h3>Doanh thu theo ngày</h3>
+        <canvas id="dailyRevenueChart" width="400" height="200"></canvas>
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/hotelDashboard.js"></script>
+</body>
+</html>

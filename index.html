@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hotel Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>🏨 Hotel Admin</h2>
+    <a href="dashboard.html"> Bảng điều khiển</a>
+    <a href="KhachHang.html">Khách hàng</a>
+    <a href="#"> Phòng</a>
+    <a href="#">Hóa đơn</a>
+    <a href="#">Dịch vụ</a>
+  </div>
+
+  <div class="main">
+    <div class="topbar">Dashboard Quản Lý Khách Sạn</div>
+
+    <div class="dashboard">
+      <div class="card">
+        <h3>Khách hàng</h3>
+        <div class="value" id="customersCount">0</div>
+      </div>
+      <div class="card">
+        <h3>Phòng</h3>
+        <div class="value" id="roomsCount">0</div>
+      </div>
+      <div class="card">
+        <h3>Hóa đơn</h3>
+        <div class="value" id="billsCount">0</div>
+      </div>
+      <div class="card">
+        <h3>Dịch vụ</h3>
+        <div class="value" id="servicesCount">0</div>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <h3>📈 Doanh thu theo tháng</h3>
+      <canvas id="revenueChart" width="400" height="150"></canvas>
+    </div>
+  </div>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- JS Logic -->
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
